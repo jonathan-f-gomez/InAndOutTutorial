@@ -11,11 +11,14 @@ namespace InAndOutTutorial.Models
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string Borrower { get; set; }
-
+        [Required]
         public string Lender { get; set; }
 
-        public string ItemName { get; set; }
         [DisplayName("Item Name")]
+        [Required]
+        public string ItemName { get; set; }
+        
     }
 }
